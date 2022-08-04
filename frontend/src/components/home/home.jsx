@@ -1,4 +1,7 @@
 //   import a from "../../../../frontend/public/assets/image"
+import image1 from "../../images/home-1-logo.png"
+// import image2 from "../../images/"
+
 
 const Home = () =>
 {
@@ -85,7 +88,7 @@ const Home = () =>
             <section className="navbar_outer">
                <div className="navbar navbar-expand-lg  bsnav bsnav-sticky bsnav-sticky-slide">
                   <div className="container">
-                     <a className="navbar-brand" href="index.html"><img src="https://play.google.com/store/apps/details?id=com.google.android.apps.meetings&hl=en_US&gl=US" className="img-fluid" alt="img"></img></a>
+                     <a className="navbar-brand" href="index.html"><img src={image1} className="img-fluid" alt="img"></img></a>
                      <button className="navbar-toggler toggler-spring"><span className="navbar-toggler-icon"></span></button>
                      <div className="collapse navbar-collapse scroll-nav">
                         <ul className="navbar-nav navbar-mobile navbar_left  ml-auto" id="nav">
@@ -1154,7 +1157,7 @@ const Home = () =>
       </div>
       {/* <!-- /.search-popup --> */}
       {/* <!-----------------------------------script--------------------------------------> */}
-   
+    
       </>
     )
 }

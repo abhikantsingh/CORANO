@@ -10,6 +10,7 @@ import Abouts from "./components/Abouts/abouts";
 import Contact from "./components/contact/cont";
 import Blog from "./components/blog/blog";
 import Create from "./components/createblog/create";
+import Home from "./components/home/home";
 
 
 const App = () =>
@@ -27,9 +28,9 @@ useEffect(async () => {
 
   const url = 'http://localhost:8001/test';
    
-    const response=await fetch(url);
+    // const response=await fetch(url);
 
-    const data=await response.text();
+    // const data=await response.text();
 
     console.log(data);
     setData(data);
@@ -43,8 +44,10 @@ useEffect(async () => {
          {/* <NavBar></NavBar> */}
         
       <Switch>
-        
-        <Route  path="/" exact>
+        <Route path="/" exact>
+           <Home></Home>
+        </Route>
+        <Route  path="/info" exact>
       <div className="main">
      
       <NavBar></NavBar>
