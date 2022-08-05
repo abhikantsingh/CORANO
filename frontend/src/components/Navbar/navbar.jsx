@@ -1,5 +1,5 @@
 import "./navbar.css";
-import logo from "../../images/default-logo.png";
+import logo from "../../images/favicon-32x32.png";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
@@ -12,7 +12,7 @@ const NavBar = () => {
             {/* <a href="http://localhost:8080/"><div className="home">back</div></a> */}
 
          {/* </div> */}
-         <div className="home">Blog</div>
+         {/* <div className="home">Blog</div> */}
       </div>
      
    )

@@ -10,7 +10,7 @@ import Abouts from "./components/Abouts/abouts";
 import Contact from "./components/contact/cont";
 import Blog from "./components/blog/blog";
 import Create from "./components/createblog/create";
-import Home from "./components/home/home";
+// import Home from "./components/home/home";
 
 
 const App = () =>
@@ -41,15 +41,11 @@ useEffect(async () => {
     return(
  
     <Router>
-         {/* <NavBar></NavBar> */}
+         <NavBar></NavBar> 
         
       <Switch>
-        <Route path="/" exact>
-           <Home></Home>
-        </Route>
-        <Route  path="/info" exact>
+        <Route  path="/" exact>
       <div className="main">
-     
       <NavBar></NavBar>
       {/* <div className="data">{page}</div> */}
        <Card country={countries}></Card>
