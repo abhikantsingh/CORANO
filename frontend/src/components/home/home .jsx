@@ -3,6 +3,7 @@
  import "../home/style.css";
 //  import "../home/owl.css";
 //  import "../../"
+// https://fast-gorge-84433.herokuapp.com/
 import { useEffect, useState } from "react";
 import axios from "axios";
   import image1 from "../image/home-1-logo-white.png";
