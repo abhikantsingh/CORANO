@@ -47,23 +47,23 @@
 
 --------------------------table-of-contents---------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap'); 
 
 /*----font-family: 'Poppins', sans-serif; font-family: 'Inter', sans-serif;---------*/
 
 
 /*--------------import----external-css-----------------*/
 
-@import url('rtl.css');
+/* @import url('rtl.css');
 @import url('font-awesome.min.css');
-@import url('animate.css');
+@import url('animate.css'); */
 @import url('owl.css');
-@import url('jquery-ui.css');
+/* @import url('jquery-ui.css');
 @import url('jquery.fancybox.min.css');
 @import url('bsnav.min.css');
 @import url('flexslider.css');
-@import url('swiper.min.css');
+@import url('swiper.min.css'); */
 
 /*--------------import----external-css-----------------*/
 
@@ -962,6 +962,7 @@ headings
 
 .heading.tp_one {
 	position: relative;
+	/* right:1000px; */
 	margin-bottom: 25px;
 	z-index: 0;
 }
@@ -980,6 +981,7 @@ headings
 
 .heading.tp_one h1 {
 	position: relative;
+	/* left: 500px; */
 	font-size: 42px;
 	line-height: 56px;
 	font-weight: 700;
@@ -991,12 +993,13 @@ headings
 	line-height: 60px;
 	position: absolute;
 	top: 0;
+	/* left: 1000px; */
 	color: #f3f9fe;
 	z-index: -1;
 }
 
 .heading.tp_one.icon_dark span.icon {
-	color: #edf2f7;
+	color: white;
 }
 
 .heading.tp_one.text_white span.icon {
@@ -1195,7 +1198,7 @@ header css
 
 .header_v1 .header_top {
 	position: relative;
-	background-image: url(../image/resources/header-top-bg.jpg);
+	 background-image: url(../image/resources/header-top-bg.jpg);
 	background-position: center;
 	background-size: cover;
 	padding: 14px 0px 0px;
@@ -2290,7 +2293,7 @@ header css
 	align-content: space-between;
 	margin-left: auto;
 	overflow-x: hidden!important;
-	overflow-y: auto;
+	overflow-y: hidden;
 }
 
 .site-header__sidemenu-nav {
@@ -2561,7 +2564,7 @@ ripple video btn css
 .banner.type_two {
 	position: relative;
 	height: 1000px;
-	background: url(../image/main-slider/banner-3-bg.jpg);
+	 background: url(../image/main-slider/banner-3-bg.jpg); 
 	background-size: cover;
 }
 
@@ -2760,11 +2763,12 @@ ripple video btn css
 .main-slider .content {
 	position: relative;
 	margin: auto;
+	overflow-y: hidden;
 }
 
 .main-slider .slide {
 	position: relative;
-	padding: 100px 0px 100px;
+	padding: 100px 100px 90px 100px;
 	height: 850px;
 }
 
@@ -2885,7 +2889,7 @@ ripple video btn css
 	}
 	.main-slider .content {
 		margin: 80px auto auto;
-		padding-right: 30px;
+		padding-right: 100px;
 	}
 	.main-slider .content.slide_content_right {
 		padding-right: 0px;
@@ -3259,6 +3263,7 @@ ripple video btn css
 
 .about.type_one {
 	position: relative;
+	width: 100%;
 	padding: 100px 0px 100px;
 	background: #f3f9fe;
 }
@@ -3573,7 +3578,7 @@ ripple video btn css
 .funfacts.type_two {
 	position: relative;
 	padding: 100px 0px 70px;
-	background-image: url(../image/resources/explore-bg.jpg);
+	 background-image: url(../image/resources/explore-bg.jpg); 
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -4167,7 +4172,7 @@ ripple video btn css
 .explore_more {
 	position: relative;
 	padding: 100px 0px;
-	background: url(../image/resources/explore-bg.jpg);
+	 background: url(../image/resources/explore-bg.jpg); 
 	background-position: 0px, 0px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -4175,7 +4180,7 @@ ripple video btn css
 }
 
 .explore_more.two {
-	background: url(../image/resources/explore-bg-2.jpg);
+	 background: url(../image/resources/explore-bg-2.jpg); 
 	background-position: 0px, 0px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -5628,7 +5633,7 @@ symptoms
 
 .symptoms.type_one {
 	position: relative;
-	padding: 100px 0px 180px;
+	padding: 0px 0px 180px;
 }
 
 .symptoms.type_one .heading.tp_one {
@@ -5643,7 +5648,7 @@ symptoms
 
 .symptoms.type_one .image_box::before {
 	position: absolute;
-	content: url(../image/resources/Sym-border.png);
+	 content: url(../image/resources/Sym-border.png); 
 	top: 3px;
 	left: 0px;
 	right: 0;
@@ -5851,7 +5856,7 @@ symptoms
 
 .symptoms.type_two {
 	position: relative;
-	padding: 100px 0px 70px;
+	padding: 0px 0px 70px;
 }
 
 .symptoms.type_two .image_box {
@@ -5865,6 +5870,7 @@ symptoms
 
 .symptoms_box_two {
 	position: relative;
+	/* right: 100px; */
 	margin-bottom: 20px;
 }
 
@@ -5992,7 +5998,7 @@ symptoms
 .symptoms.type_four {
 	position: relative;
 	margin-top: 110px;
-	background: url(../image/resources/home-4-symptoms-bg.jpg);
+	 background: url(../image/resources/home-4-symptoms-bg.jpg); 
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -7270,7 +7276,7 @@ page_title
 	position: relative;
 	padding: 120px 0px;
 	min-height: 300px;
-	background: url(../image/resources/breadcrumb.jpg);
+	 background: url(../image/resources/breadcrumb.jpg); 
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
