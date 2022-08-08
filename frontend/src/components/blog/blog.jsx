@@ -13,7 +13,7 @@ const Blog = () =>
        console.log("delete");
        axios({
            method:"DELETE",
-           url:`http://localhost:8001/deleteBlog/${id}`,
+           url:`deleteBlog/${id}`,
        }).then((res) =>
        {
            setRecord(res.data.allBlog);
@@ -22,7 +22,7 @@ const Blog = () =>
   useEffect(() => {
     axios({
         method:"GET",
-        url:"http://localhost:8001/allBlog"
+        url:"https://fast-gorge-84433.herokuapp.com/allBlog"
     }).then((res) =>
     {
         setRecord(res.data.allBlog);

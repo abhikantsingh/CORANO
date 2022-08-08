@@ -28,7 +28,7 @@ const Create = () =>
      event.preventDefault();
       axios({
         method:"POST",
-        url:"http://localhost:8001/Blog",
+        url:"https://fast-gorge-84433.herokuapp.com/Blog",
         data:username
       }).then((res)=>{
         console.log(res);
@@ -41,7 +41,7 @@ const Create = () =>
 //     console.log("delete");
 //     axios({
 //         method:"DELETE",
-//         url:`http://localhost:8001/deleteBlog/${id}`,
+//         url:`https://fast-gorge-84433.herokuapp.com/deleteBlog/${id}`,
 //     }).then((res) =>
 //     {
 //         setRecord(res.data.allBlog);
@@ -51,7 +51,7 @@ const Create = () =>
   useEffect(() => {
     axios({
         method:"GET",
-        url:"http://localhost:8001/allBlog"
+        url:"https://fast-gorge-84433.herokuapp.com/allBlog"
     }).then((res) =>
     {
         setRecord(res.data.allBlog);

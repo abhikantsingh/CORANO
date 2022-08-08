@@ -20,7 +20,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.delete("/deleteBlog/:id", (req, res) => {
+app.delete("https://fast-gorge-84433.herokuapp.com/deleteBlog/:id", (req, res) => {
   const id = req.params.id;
   Blog.deleteOne({ _id: id }).then(() => {
     Blog.find().then((blogs) => {
@@ -33,7 +33,7 @@ app.delete("/deleteBlog/:id", (req, res) => {
   });
 });
 
-app.get("/allBlog", async (req, res) => {
+app.get("https://fast-gorge-84433.herokuapp.com/allBlog", async (req, res) => {
   const data = await Blog.find();
   res.status(200).json({
     allBlog: data,
@@ -46,7 +46,7 @@ app.get("/allBlog", async (req, res) => {
   //  })
   // })
 });
-app.post("/Blog", (req, res) => {
+app.post("https://fast-gorge-84433.herokuapp.com/Blog", (req, res) => {
   console.log(req);
   const blog = new Blog({
     fname: req.body.fname,
@@ -65,7 +65,7 @@ app.post("/Blog", (req, res) => {
     });
   });
 });
-app.post("/Contact", (req, res) => {
+app.post("https://fast-gorge-84433.herokuapp.com/Contact", (req, res) => {
   console.log(req);
   const contact = new Contact({
     name: req.body.name,
