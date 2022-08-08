@@ -122,10 +122,10 @@ const Home = () =>
                   <div className="container">
 
 
-                     <a className="navbar-brand" href="index.html"><img src={require('../image/home-1-logo-white.png').default} className="img-fluid" alt="img"></img></a>
+                     <a className="navbar-brand"><img src={require('../image/home-1-logo-white.png').default} className="img-fluid" alt="img"></img></a>
                      <button className="navbar-toggler toggler-spring"><span className="navbar-toggler-icon"></span></button>
-                     <div className="collapse navbar-collapse scroll-nav">
-                       <ul className="navbar-nav navbar-mobile navbar_left  ml-auto" id="nav">
+                     <div className="">
+                       <ul className="navbar-nav" id="nav" style={{position:"relative",right:"10px",bottom:"10px"}}>
                           <li className="nav-item nav_item active">
                               <a className="nav-link link_hd" href="/home">  Home  </a></li>
                            <li className="nav-item nav_item">
