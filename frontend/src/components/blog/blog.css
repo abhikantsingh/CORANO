@@ -8,6 +8,10 @@
   color: white;
   font-family:Century Gothic;
 }
+.homelogo{
+  position: absolute;
+  margin: 20px 20px;
+}
 .blogMain{
   overflow-x: hidden!important;
 	overflow-y: auto;
@@ -53,29 +57,47 @@
   box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
   transition: 0.5s;
 }
+
+.blogimg{
+  width:900px;
+  height: 500px;
+}
+
+.BlogNavbar{
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 30px;
+  background-color:#6BDAED;
+}
 .createBlog{
  display: flex; 
- margin: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px; 
 height: 150px;
-flex-direction: column;
+flex-direction: row;
+ gap: 100px; 
 align-items: center;
-background-color:cornflowerblue;
-height: 200px;
+background-color:#6BDAED;
+height: 500px;
 overflow: hidden;
-border-radius: 10px;
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+/* border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+.emaillogo{
+  width: 30px;
+  height: 30px;
+  padding: 5px 5px 5px 5px;
 }
 .backColor1{
   background-color:aliceblue;
-  margin: 10px 10px 10px 10px;
+  margin: 30px 10px 10px 10px;
   height: auto;
   gap: 50px;
   /* border-radius: 10px; */
 /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-border-radius: 20px;
+/* border-radius: 20px; */
   cursor: pointer;
   /* font-weight: 900; */
-  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  /* box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white; */
   transition: 0.5s;
 
 }
@@ -83,8 +105,8 @@ border-radius: 20px;
   background-color: antiquewhite;
   margin: 10px 10px 10px 10px;
   height: auto;
-  border-radius: 10px;
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* border-radius: 10px; */
+/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 
 }
 .headerLeft{
